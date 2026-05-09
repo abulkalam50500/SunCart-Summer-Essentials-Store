@@ -1,14 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {  Lato } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+
+export const leto = Lato({
+   variable:"--font-lato-sans",
+   weight: ['400', '700'], 
+   subsets:["latin"]
 });
 
 export const metadata = {
@@ -19,10 +19,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
+    data-theme="light"
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${leto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header/>
+        <Navbar/>
+        
+        {children}
+
+        
+      </body>
     </html>
   );
 }
