@@ -4,8 +4,8 @@ import { CiUser,CiLogin } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto mt-3 rounded-2xl hidden">
-      <div className="p-3 flex justify-between items-center">
+    <div className="container mx-auto mt-3 rounded-2xl">
+      <div className="p-3 flex flex-col md:flex-row justify-between items-center">
         <div className="logo">
           <h2 className="font-extrabold text-4xl text-black">SunCart</h2>
         </div>

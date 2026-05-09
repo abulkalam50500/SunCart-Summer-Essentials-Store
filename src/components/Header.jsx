@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 const Header = () => {
     return (
-        <div className="bg-black  p-3 ">
+        <div className="bg-black  p-3">
             <div className="container mx-auto space-y-2 sm:space-y-2  text-white/80 flex flex-col md:flex-row justify-between items-center">
                 
                  <p>Welcome to SunCart – Summer Essentials Store</p>
