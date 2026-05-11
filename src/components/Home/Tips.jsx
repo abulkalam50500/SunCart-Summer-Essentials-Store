@@ -9,8 +9,8 @@ const Tips = () => {
         SUMMER <span className="text-yellow-500">CARE TIPS</span>
       </h2>
 
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-3">
-        <Card className="w-[400px]">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-3 ">
+        <Card className="w-full">
             <GiWaterDrop size={37} color="blue" />
           <Card.Header>
             <Card.Title>Stay Hydrated in Summer</Card.Title>
@@ -22,7 +22,7 @@ const Tips = () => {
         </Card>
 
 
-         <Card className="w-[400px]">
+         <Card className="w-full">
             <FaSun size={37} color="gold" />
           <Card.Header>
             <Card.Title>Protect Your Skin from Sun Damage</Card.Title>
@@ -34,7 +34,7 @@ const Tips = () => {
         </Card>
 
 
-         <Card className="w-[400px]">
+         <Card className="w-full">
             <FaAppleAlt size={37}  />
           <Card.Header>
             <Card.Title>Eat Light and Healthy Foods</Card.Title>
