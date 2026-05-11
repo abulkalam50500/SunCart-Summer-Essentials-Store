@@ -2,6 +2,8 @@ import Image from "next/image";
 import HeroSection from "@/components/Home/Hero";
 import Products from "@/components/Home/Products";
 import Tips from "@/components/Home/Tips";
+import Brands from "@/components/Home/Brands";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +12,10 @@ export default function Home() {
        <HeroSection/>
        <Products/>
        <Tips/>
+       <Brands/>
+       <Footer/>
+
+
     </div>
   );
 }

@@ -5,3 +5,12 @@ export const getProduct = async()=>{
     return data;
 
 }
+
+
+export const getBrands = async()=>{
+
+    const res = await fetch('https://tellus.itsoft-bd.com/brands.json');
+    const data = await res.json();
+    return data;
+
+}

@@ -5,11 +5,11 @@ import { FaSun,FaAppleAlt  } from "react-icons/fa";
 const Tips = () => {
   return (
     <div className="container mx-auto mt-10">
-      <h2 className="text-[34px] font-extrabold">
+      <h2 className="text-[34px] font-extrabold text-center md:text-left">
         SUMMER <span className="text-yellow-500">CARE TIPS</span>
       </h2>
 
-      <div className="mt-6 grid grid-cols-2 md:grid-cols-3">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-3">
         <Card className="w-[400px]">
             <GiWaterDrop size={37} color="blue" />
           <Card.Header>
