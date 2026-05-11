@@ -19,36 +19,46 @@ const HeroSection = () => {
             <h1 className="text-[33px] font-semibold">
               Best Deal Online on smart watches
             </h1>
-            <h1 className="text-[60px] font-bold">LATEST NIKE SHOES</h1>
-            <h1 className="text-[32px] font-semibold">UP to 80% OFF</h1>
+            <h1 className="text-[50px] font-bold">LATEST NIKE SHOES</h1>
+
+            <div className="flex gap-3 items-center flex-wrap mt-2">
+                <span className="bg-red-100 text-red-600 px-3 py-1 rounded-full text-lg font-semibold">
+                    Summer Sale 50% OFF
+                </span>
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-lg font-semibold flex items-center gap-1">
+    Hot Deals 🔥
+  </span>
+            </div>
+
+           <h1 className="text-[32px] font-semibold">Summer Sale 50% OFF</h1>
 
             <p className="py-6">
               Discover everything you need to make this summer brighter, cooler,
               and more stylish with our latest seasonal collection.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               <Image
                 src={DisImg}
-                className="rounded-md"
+                className="rounded-md w-full"
                 width={150}
                 height={150}
               />
               <Image
                 src={fashonImage}
-                className="rounded-md"
+                className="rounded-md w-full"
                 width={150}
                 height={150}
               />
               <Image
                 src={fashonTwo}
-                className="rounded-md"
+                className="rounded-md w-full"
                 width={150}
                 height={150}
               />
               <Image
                 src={fashonThree}
-                className="rounded-md"
+                className="rounded-md w-full"
                 width={150}
                 height={150}
               />
