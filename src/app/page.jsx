@@ -13,7 +13,7 @@ export default function Home() {
        <Products/>
        <Tips/>
        <Brands/>
-       <Footer/>
+       
 
 
     </div>

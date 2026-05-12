@@ -14,7 +14,7 @@ const Products = async () => {
         and style.
       </p>
 
-      <div className="product-cards grid grid-cols-1 md:grid-cols-3">
+      <div className="product-cards grid grid-cols-1 gap-4 md:grid-cols-3 mt-6">
          {
             products.map((item,index)=><Card key={index} item={item} />)
          }

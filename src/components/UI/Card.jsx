@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 import { CiStar } from "react-icons/ci";
+import Link from 'next/link';
 
 const Card = ({item}) => {
     return (
         <div>
             <div className="card bg-base-100  shadow-sm">
           <figure>
-            <Image className='' src={item.image} alt='' width={300} height={300} />
+            <Image className='rounded-2xl' src={item.image} alt='' width={300} height={300} />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-[22px] text-bold">
@@ -31,7 +32,7 @@ const Card = ({item}) => {
 
             <div className="flex gap-3">
               <button className="btn">Buy Now</button>
-              <button className="btn btn-outline">View Detail</button>
+              <Link href={`/product-details/${item.id}`} className="btn btn-outline">View Detail</Link>
             </div>
           </div>
         </div>
