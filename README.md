@@ -1,26 +1,33 @@
-☀️ SunCart – Summer Essentials Store
-SunCart is a modern, high-performance eCommerce platform dedicated to summer seasonal products. From UV-protection sunglasses to beachwear and skincare, SunCart provides a seamless shopping experience with a focus on clean design and secure user authentication.
+# ☀️ SunCart – Summer Essentials Store
 
-🔗 Live URL
-[Insert your Vercel/Live Link here] (e.g., https://suncart-summer.vercel.app)
+**SunCart** is a modern, high-performance eCommerce platform dedicated to summer seasonal products. From UV-protection sunglasses to beachwear and skincare, SunCart provides a seamless shopping experience with a focus on clean design, responsiveness, and secure user authentication.
 
-🚀 Key Features
+---
 
-🔒 Protected Dynamic Routes: Ensures premium product details are only accessible to authenticated users via advanced middleware protection.
-🔐 Secure Authentication: Powered by BetterAuth, supporting traditional Email/Password credentials and one-click Google Social Login.
-📱 Fully Responsive: Optimized for a pixel-perfect experience across mobile, tablet, and desktop devices.
-👤 Dynamic User Profiles: A dedicated "My Profile" section where users can view their credentials and update their name or profile picture in real-time.
-✨ Interactive UI/UX: Enhanced with Animate.css and Lottie animations for a smooth, modern, and engaging user feel.
-🛍️ Summer-Centric Content: Includes a curated Hero section, popular product showcases, summer care tips, and top brand highlights
+## 🔗 Live Project
+**Live URL:** https://sun-cart-sable.vercel.app/
 
+---
 
-🛠️ Tech Stack & NPM Packages
-This project leverages the latest web technologies for speed and scalability:
+## 🚀 Key Features
 
-Framework: 
-Next.js (App Router)
-Styling: Tailwind CSS & DaisyUI
-Authentication: BetterAuth
-Form Management: React Hook Form
-Toast Notifications: React-Toastify
-Animations: Animate.css & Lottie-React
+*   **🔒 Protected Dynamic Routes:** Access to Product Details is restricted to logged-in users only. Unauthorized access is automatically redirected to the login page via Next.js Middleware.
+*   **🔐 Secure Authentication:** Integrated with **BetterAuth**, supporting both traditional Email/Password login and one-click Google Social Authentication.
+*   **👤 Profile Management:** A dedicated "My Profile" dashboard to view user details and an "Update Information" feature to change names and profile pictures.
+*   **🛍️ Curated Summer Catalog:** Features a dynamic home page with a Hero section, popular products, summer care tips, and top brand cards.
+*   **✨ Interactive UX:** Smooth user experience enhanced by **Animate.css** and **Lottie** animations.
+*   **📱 Fully Responsive:** Hand-crafted unique design using **DaisyUI** that works perfectly on Mobile, Tablet, and Desktop.
+
+---
+
+## 🛠️ Tech Stack & NPM Packages
+
+This project is built using the latest web technologies:
+
+- **Framework:** [Next.js] (App Router)
+- **Styling:** [Tailwind CSS] & [DaisyUI]
+- **Authentication:** [BetterAuth]
+- **Form Handling:** [React Hook Form]
+- **Notifications:** [React-Toastify]
+- **Animations:** [Animate.css] 
+
