@@ -1,12 +1,14 @@
 'use client'
 
 import { authClient } from "@/lib/auth-client";
+import { handleSignInGoole,handleSignInGithub } from "@/lib/login_auth";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Bounce, toast } from "react-toastify";
 
 
 const LoginPage = () => {
+
 
 const router = useRouter();
       const {
@@ -67,12 +69,7 @@ transition: Bounce,
 }
 
 
-const handleSignInGoole=async()=>{
-  const data = await authClient.signIn.social({
-    provider: "google",
-  });
 
-}
 
   return (
     <div className="container mx-auto mt-19 flex justify-center">
@@ -93,7 +90,7 @@ const handleSignInGoole=async()=>{
         </fieldset>
         </form>
           <div className="flex gap-2  justify-center m-2" >
-          <button className="btn bg-black text-white border-black">
+          <button className="btn bg-black text-white border-black" onClick={()=>handleSignInGithub()}>
             <svg
               aria-label="GitHub logo"
               width="16"

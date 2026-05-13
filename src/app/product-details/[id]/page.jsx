@@ -18,9 +18,10 @@ const ProductDetails = async ({ params }) => {
         <div className="left-section">
           <Image
             className="rounded-2xl"
-            src={Details.image}
+            src={Details?.image}
             width={500}
             height={500}
+            alt=""
           />
         </div>
         <div className="right-section">

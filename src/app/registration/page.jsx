@@ -4,7 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Bounce, toast } from "react-toastify";
-
+import { handleSignInGoole,handleSignInGithub } from "@/lib/login_auth";
 
 const RegistrationPage = () => {
  const router = useRouter();
@@ -121,7 +121,7 @@ router.push("/");
         </form>
 
         <div className="flex gap-2  justify-center m-2" >
-          <button className="btn bg-black text-white border-black">
+          <button className="btn bg-black text-white border-black" onClick={()=>handleSignInGithub()}>
             <svg
               aria-label="GitHub logo"
               width="16"
@@ -138,7 +138,7 @@ router.push("/");
           </button>
 
           {/* Google */}
-          <button className="btn bg-white text-black border-[#e5e5e5]">
+          <button className="btn bg-white text-black border-[#e5e5e5]" onClick={()=>handleSignInGoole()}>
             <svg
               aria-label="Google logo"
               width="16"
