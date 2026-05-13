@@ -16,7 +16,7 @@ const Products = async () => {
 
       <div className="product-cards grid grid-cols-1 gap-4 md:grid-cols-3 mt-6">
          {
-            products.map((item,index)=><Card key={index} item={item} />)
+            products?.map((item,index)=><Card key={index} item={item} />)
          }
       </div>
     </div>

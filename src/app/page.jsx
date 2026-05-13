@@ -1,9 +1,7 @@
-import Image from "next/image";
-import HeroSection from "@/components/Home/Hero";
-import Products from "@/components/Home/Products";
-import Tips from "@/components/Home/Tips";
-import Brands from "@/components/Home/Brands";
-import Footer from "@/components/Footer";
+import HeroSection from "@/components/home/Hero";
+import Products from "@/components/home/Products";
+import Tips from "@/components/home/Tips";
+import Brands from "@/components/home/Brands";
 
 export default function Home() {
   return (

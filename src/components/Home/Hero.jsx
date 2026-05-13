@@ -14,7 +14,7 @@ const HeroSection = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <Image src={Slider} width={500} className="rounded-md" />
+          <Image src={Slider} width={500} alt="" className="rounded-md" />
           <div>
             <h1 className="text-[33px] font-semibold">
               Best Deal Online on smart watches
@@ -43,24 +43,28 @@ const HeroSection = () => {
                 className="rounded-md w-full"
                 width={150}
                 height={150}
+                alt=""
               />
               <Image
                 src={fashonImage}
                 className="rounded-md w-full"
                 width={150}
                 height={150}
+                alt=""
               />
               <Image
                 src={fashonTwo}
                 className="rounded-md w-full"
                 width={150}
                 height={150}
+                alt=""
               />
               <Image
                 src={fashonThree}
                 className="rounded-md w-full"
                 width={150}
                 height={150}
+                alt=""
               />
             </div>
 
