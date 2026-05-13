@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Bounce, toast } from "react-toastify";
 import { handleSignInGoole,handleSignInGithub } from "@/lib/login_auth";
-
+import 'animate.css';
 const RegistrationPage = () => {
  const router = useRouter();
       const {
@@ -72,7 +72,7 @@ router.push("/");
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
               <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-[300px] md:w-[500px] border p-4">
-          <legend className="fieldset-legend text-[25px]">
+          <legend className="fieldset-legend text-[25px] animate__animated animate__bounce">
             Registration Form
           </legend>
 
@@ -84,7 +84,7 @@ router.push("/");
             {...register("name",{ required: true })}
             placeholder="Name"
           />
-          {errors.name && <span>This field is required</span>}
+          {errors.name && <span className="text-red">This field is required</span>}
 
           <label className="label ">Email</label>
           <input
@@ -94,7 +94,7 @@ router.push("/");
             {...register("email",{ required: true })}
             placeholder="Email"
           />
-          {errors.email && <span>This field is required</span>}
+          {errors.email && <span className="text-red">This field is required</span>}
 
           <label className="label ">Photo Url</label>
           <input
@@ -114,7 +114,7 @@ router.push("/");
             {...register("password",{ required: true })}
             placeholder="Password"
           />
-          {errors.password && <span>This field is required</span>}
+          {errors.password && <span className="text-red">This field is required</span>}
 
           <button className="btn btn-neutral mt-4 ">Registration</button>
         </fieldset>

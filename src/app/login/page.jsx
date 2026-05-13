@@ -5,7 +5,7 @@ import { handleSignInGoole,handleSignInGithub } from "@/lib/login_auth";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Bounce, toast } from "react-toastify";
-
+import 'animate.css';
 
 const LoginPage = () => {
 
@@ -76,7 +76,7 @@ transition: Bounce,
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-[300px] md:w-[400px] border p-4">
-          <legend className="fieldset-legend text-[25px]">Login Form</legend>
+          <legend className="fieldset-legend text-[25px] animate__animated animate__bounce">Login Form</legend>
 
           <label className="label">Email</label>
           <input type="email" className="input w-full" {...register("email",{ required: true })} name="email" placeholder="Email" />
